@@ -39,7 +39,7 @@ window.onload = function()
 		this.g = Math.round(Math.random()*255);
 		this.b = Math.round(Math.random()*255);*/
 
-		this.randomColor = randomInt(0,colorsArray.colors.length-1);
+		this.randomColor = randomInt(0,colorsArray.colors.length -1);
 		this.r = colorsArray.colors[this.randomColor].red;
 		this.g = colorsArray.colors[this.randomColor].green;
 		this.b = colorsArray.colors[this.randomColor].blue;
@@ -127,11 +127,12 @@ window.onload = function()
 	//Function for our logic
 	function update()
 	{
-		for(i=0; i<boxes.length; i++)
+		for(var i=0; i<boxes.length; i++)
 			boxes[i].update();
 	}
 
-	setInterval(function(){boxes.push(new Box(0,0))},1000);
+	setInterval(function(){
+		boxes.push(new Box(0,0))},1000);
 
 	//set interval so we can draw then update our drawing
 	// every 30 milisecond

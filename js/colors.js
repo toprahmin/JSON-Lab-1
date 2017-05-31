@@ -1,7 +1,7 @@
-var colorsArray = [
+var colorsArray = {
+    
+    "colors" : [
     {
-    colors =[
-        {
             "name":"green",
             "red":"64",
             "green":"175",
@@ -33,4 +33,3 @@ var colorsArray = [
         }
     ]
 }
-]
